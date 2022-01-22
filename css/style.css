@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: 1440px;
+  max-height: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*header css*/
+.page-header {
+  margin-top: 100px;
+  height: 750px;
+}
+
+.navigation-header {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+}
+
+.main-index {
+  height: 2060px;
+}
+
+.footer-page {
+  height: 321px;
+  left: 0;
+  top: 0;
+  background-color: #444444;
+}
