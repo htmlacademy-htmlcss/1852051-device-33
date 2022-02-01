@@ -4,13 +4,24 @@ body {
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
+  vertical-align: top;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+
 /*header css*/
+
 .header {
   position: relative;
   max-width: 1440px;
@@ -36,6 +47,12 @@ a {
   margin: 0;
 }
 
+section {
+  width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .navigation-container {
   position: relative;
   margin-right: auto;
@@ -46,11 +63,63 @@ a {
   background-color: #FFE17F;
 }
 
+.search {
+  display: flex;
+  height: 40px;
+  width: 517px;
+}
+
+.search-input {
+  width: 359px;
+  height: 40px;
+  background-color: #FFE17F;
+  border: 2px solid black;
+  border-radius: 40px 0 0 40px;
+}
+
+.search-button {
+  width: 153px;
+  height: 40px;
+  background-color: #FFE17F;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 0 40px 40px 0;
+  border-left: none;
+}
+
+#search{
+  background-image: url("../images/icons/search.png");
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  background-position: 10px 10px;
+}
+
+input#search:focus{
+  background-image:none;
+}
+
+#search::placeholder {
+  font-size: 16px;
+  color: black;
+  margin-left: 10px;
+  right: 20px;
+  padding-left: 30px;
+}
+
 .dropdown-list {
   position: absolute;
   display: inline-block;
   margin-right: 60px;
   left: 50px;
+}
+
+.dropdown-img img {
+  position: absolute;
+  padding: 19px 19px;
+  border: 2px solid black;
+  border-radius: 50%;
+  right: -100px;
+  bottom: -15px;
 }
 
 .dropdown-list span {
@@ -61,7 +130,6 @@ a {
   height: 50px;
   text-transform: uppercase;
   margin: 0;
-
 }
 
 .dropdown-content {
@@ -92,25 +160,6 @@ a {
   margin-right: auto;
   margin-left: auto;
   justify-content: space-between;
-}
-
-.search {
-  display: flex;
-  height: 40px;
-  width: 517px;
-  border: 2px solid black;
-}
-
-.search-product {
-  width: 359px;
-  height: 38px;
-  border: none;
-}
-
-.search-button {
-  width: 153px;
-  height: 40px;
-  border: none;
 }
 
 .sign-in-form {
@@ -209,12 +258,29 @@ a {
   position: relative;
 }
 
-.description-product h1 {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 50px;
+.characteristic-product a {
+  position: relative;
   font-family: Raleway, sans-serif;
-  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000000;
+  left: 40px;
+}
+
+.characteristic-product a:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  display: inline-block;
+  width: 220px;
+  max-width: 220px;
+  height: 8px;
+  z-index: -1;
+  background-color: #FFE17F;
 }
 
 .link-to-product {
@@ -225,10 +291,12 @@ a {
 .product {
   display: flex;
   width: 305px;
+  margin-top: 30px;
 }
 
 .characteristic {
   margin: 0 30px;
+  width: 150px;
 }
 
 .distance {
@@ -236,13 +304,251 @@ a {
   font-weight: 400;
 }
 
+.characteristic .distance:first-child {
+  width: 110px;
+}
+
 /*main*/
 
 .main-index {
   height: 2060px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.assortment {
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.assortment li {
+  width: 160px;
+  height: 255px;
+}
+
+.img-product {
+  width: 100%;
+  height: 160px;
+  background-color: #FFE17F;
+  display: block;
+  text-align: center;
+}
+
+.img-product img {
+  padding-top: 45px;
+}
+
+.item-name {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.assortment {
+  display: flex;
+}
+
+.delivery {
+  height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border: 2px solid black;
+  margin-top: 70px;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  position: relative;
+}
+
+.delivery-items {
+  position: relative;
+  Width: 280px;
+  Height: 40px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.delivery-items:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  display: inline-block;
+  width: 160px;
+  max-width: 220px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.delivery-items:hover {
+  color: #FFE17F;
+  background-color: black;
+}
+
+.delivery-items:hover :before {
+  content: '';
+  position: absolute;
+  height: 170px;
+  width: 3px;
+  background-color: black;
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: 450px 250px;
+  width: 700px;
+  height: 175px;
+  margin: 72px 63px 72px 116px;
+}
+
+.delivery-img img {
+  padding-left: 115px;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background-color: #F0F0F0;
+  bottom: 216px;
+  z-index: -10;
+}
+
+.delivery-exclusive {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F0F0;
+}
+
+.delivery-exclusive div {
+  height: 100%;
+  width: 125px;
+  align-self: center;
+}
+
+.delivery-exclusive span {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.delivery-logo {
+  background-color: #FFE17F;
+}
+
+.delivery-exclusive img {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 545px;
+  margin-top: 70px;
+  column-gap: 60px;
+  position: relative;
+}
+
+.contact-info h1 {
+  margin-top: 60px;
+}
+
+.contact-info a{
+  position: relative;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.company-info a {
+  margin-left: 35px;
+}
+
+.company-contact a {
+  margin-left: 15px;
+}
+
+.company-info a:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  display: inline-block;
+  width: 250px;
+  max-width: 240px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.company-contact a:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -17px;
+  display: inline-block;
+  width: 250px;
+  max-width: 210px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+}
+
+.transport-company li {
+  color: #FFE17F;
+}
+
+.transport-company span {
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.transport-company:before {
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 80px;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+.company-contact:before{
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 80px;
+  background-color: black;
+  top: 0;
 }
 
 .footer-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
   height: 321px;
   left: 0;
   top: 0;
