@@ -7,7 +7,7 @@
   <script src=" js/index.js"></script>
 </head>
 <body>
-<header class="header">
+<header class="header site-content">
   <div class="logo">
     <div>
       <img src="images/icons/d.png" alt="logo">
@@ -37,6 +37,7 @@
     <div class="actions-bar">
       <div class="search">
         <div class="search-container">
+          <img src="images/icons/search.png" alt="search"/>
           <input type="search" id="search" class="search-input" placeholder="Текст поиска"/>
         </div>
         <div class="button-container">
@@ -106,7 +107,7 @@
       </div>
     </div>
     <div class="description-product">
-      <h1>Порхает как бабочка, жалит как пчела!</h1>
+      <span class="big-size">Порхает как бабочка, жалит как пчела!</span>
       <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
         замаскированным под стандартную камеру.
       </p>
@@ -114,7 +115,7 @@
         <div class="characteristic-product">
           <a href="#">Подробнее</a>
         </div>
-        <div class="ellips">
+        <div class="ellipse">
           <img src="images/icons/ellipse-black.png" alt="ellipse">
           <img src="images/icons/ellipse-white.png" alt="ellipse">
           <img src="images/icons/ellipse-white.png" alt="ellipse">
@@ -133,7 +134,7 @@
     </div>
   </div>
 </header>
-<main class="main-index">
+<main class="main-index site-content">
   <section class="assortment-container">
     <ul class="assortment">
       <li>
@@ -168,7 +169,7 @@
       </li>
       <li>
         <div class="img-product">
-          <img src="images/content/Quadr.png" alt="quadrocopter"/>
+          <img src="images/content/quadr.png" alt="quadrocopter"/>
         </div>
         <div class="item-name">Квадрокоптеры</div>
       </li>
@@ -183,7 +184,7 @@
     <div class="description condition-condition">
       <div class="description-container">
         <div class="description-text">
-          <h1>Доставка</h1>
+          <span class="big-size">Доставка</span>
           <p>Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -234,9 +235,54 @@
       <a href="#">Напишите нам</a>
     </div>
   </section>
+  <section class="mailing">
+    <div class="mailing-content">
+      <span class="big-size">Подпишитесь на рассылку</span>
+      <p>Еженедельный дайджест с обзорами новинок,
+        длительными тест-драйвами, распаковками, а также акции, спецпредложения
+        и вот это вот всё.</p>
+    </div>
+    <div class="mailing-form">
+      <div class="email-form">
+        <form method="post">
+          <input type="email" class="email" placeholder="Ваш e-mail"/>
+          <input type="submit" class="submit" value="Подписаться">
+        </form>
+      </div>
+      <img src="images/icons/check.png" alt="vector">
+      <span>Это бесплатно</span>
+    </div>
+  </section>
+  <div class="decoration-background">
+  </div>
 </main>
-<footer class="body footer-page">
-
+<footer class="body footer-page site-content">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="images/icons/group.png" alt="logo">
+      <p>Санкт-Петербург, набережная
+        реки Карповки, 5, литера П.</p>
+    </div>
+    <div class="footer-conditions ">
+      <div class="navigation-footer">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-contact">
+      <span>Тел.: +7 (812) 812-12-12</span>
+      <img src="images/icons/academy-logo.png" alt="logo">
+    </div>
+  </div>
 </footer>
 </body>
 </html>

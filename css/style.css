@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, .big-size {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
@@ -20,14 +20,17 @@ h1 {
   margin: 0;
 }
 
+.site-content {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*header css*/
 
 .header {
   position: relative;
-  max-width: 1440px;
   height: 750px;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 100px;
 }
 
@@ -70,16 +73,21 @@ section {
 }
 
 .search-input {
-  width: 359px;
+  width: 320px;
   height: 40px;
   background-color: #FFE17F;
-  border: 2px solid black;
-  border-radius: 40px 0 0 40px;
+  border: 0 solid;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+.search-input:focus {
+  outline: 0;
 }
 
 .search-button {
   width: 153px;
-  height: 40px;
+  height: 44px;
   background-color: #FFE17F;
   font-size: 16px;
   border: 2px solid black;
@@ -87,23 +95,25 @@ section {
   border-left: none;
 }
 
-#search{
-  background-image: url("../images/icons/search.png");
-  background-repeat: no-repeat;
-  text-indent: 20px;
-  background-position: 10px 10px;
+.search-container img {
+  position: absolute;
+  padding-top: 10px;
+  left: 15px;
 }
 
-input#search:focus{
-  background-image:none;
+.search-container {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 40px 0 0 40px;
+  width: 360px;
+  height: 40px;
 }
 
 #search::placeholder {
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   margin-left: 10px;
-  right: 20px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .dropdown-list {
@@ -312,9 +322,6 @@ input#search:focus{
 
 .main-index {
   height: 2060px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .assortment {
@@ -472,7 +479,7 @@ input#search:focus{
   margin-top: 60px;
 }
 
-.contact-info a{
+.contact-info a {
   position: relative;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -536,7 +543,7 @@ input#search:focus{
   left: 0;
 }
 
-.company-contact:before{
+.company-contact:before {
   content: '';
   position: absolute;
   height: 7px;
@@ -545,12 +552,136 @@ input#search:focus{
   top: 0;
 }
 
-.footer-page {
+.mailing {
+  height: 420px;
+}
+
+.mailing-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.mailing-form {
+  display: flex;
+  position: relative;
+  height: 65px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
-  height: 321px;
+  margin-top: 155px;
+  justify-content: space-between;
+}
+
+.mailing-form img {
+  position: absolute;
+  right: 150px;
+  top: 10px;
+}
+
+.email {
+  width: 560px;
+  height: 55px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #CECECE;
+  background-color: #F0F0F0
+}
+
+.email:focus {
+  outline: 0;
+}
+
+.submit :focus {
+  outline: 0;
+}
+
+.submit {
+  width: 250px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #CECECE;
+  margin-left: -4px;
+  height: 64px;
+}
+
+.decoration-background {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-color: #F0F0F0;
+  bottom: 435px;
+  z-index: -10;
+}
+
+/*footer*/
+.footer-content {
+  display: grid;
+  grid-template-columns: 250px 660px 250px;
+  width: 1160px;
+  height: 220px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.footer-logo p {
+  font-size: 16px;
+}
+
+.footer-page {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 320px;
   left: 0;
   top: 0;
+  color: #FFFFFF;
   background-color: #444444;
+}
+
+.footer-logo:before {
+  content: '';
+  position: absolute;
+  top: 250px;
+  display: inline-block;
+  width: 250px;
+  max-width: 100px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: 1;
+}
+
+.navigation-list {
+  font-family: Raleway sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  width: 470px;
+  height: 50px;
+  text-transform: uppercase;
+  margin-right: 50px;
+  margin-left: auto;
+  margin-top: 30px;
+  letter-spacing: 5px;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-contact {
+  height: 180px;
+  margin-top: 40px;
+  text-align: right;
+}
+
+.footer-contact span {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.footer-contact img {
+  margin-top: 60px;
 }
