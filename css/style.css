@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h1, .big-size {
@@ -24,6 +25,28 @@ h1, .big-size {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.background-yellow-line {
+  display: inline-block;
+  position: relative;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.background-yellow-line::before {
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  left: -10%;
+  width: 120%;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
 }
 
 /*header css*/
@@ -202,7 +225,7 @@ section {
   margin-top: 5px;
 }
 
-.navigation-list {
+.header-navigation-list {
   display: flex;
   justify-content: space-between;
   font-family: Raleway sans-serif;
@@ -266,31 +289,6 @@ section {
   height: 400px;
   bottom: 25px;
   position: relative;
-}
-
-.characteristic-product a {
-  position: relative;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 100%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #000000;
-  left: 40px;
-}
-
-.characteristic-product a:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  right: -40px;
-  display: inline-block;
-  width: 220px;
-  max-width: 220px;
-  height: 8px;
-  z-index: -1;
-  background-color: #FFE17F;
 }
 
 .link-to-product {
@@ -376,41 +374,21 @@ section {
 }
 
 .delivery-items {
-  position: relative;
-  Width: 280px;
-  Height: 40px;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  width: 280px;
+  height: 40px;
   text-align: center;
 }
 
-.delivery-items:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: 60px;
-  display: inline-block;
-  width: 160px;
-  max-width: 220px;
-  height: 8px;
-  background-color: #FFE17F;
-  z-index: -1;
+.delivery-items span {
+  width: 153px;
 }
 
 .delivery-items:hover {
-  color: #FFE17F;
-  background-color: black;
+  background-color: #000;
 }
 
-.delivery-items:hover :before {
-  content: '';
-  position: absolute;
-  height: 170px;
-  width: 3px;
-  background-color: black;
+.delivery-items:hover span {
+  color: #FFE17F;
 }
 
 .description-container {
@@ -479,15 +457,6 @@ section {
   margin-top: 60px;
 }
 
-.contact-info a {
-  position: relative;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
-}
 
 .company-info a {
   margin-left: 35px;
@@ -495,32 +464,6 @@ section {
 
 .company-contact a {
   margin-left: 15px;
-}
-
-.company-info a:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  right: -15px;
-  display: inline-block;
-  width: 250px;
-  max-width: 240px;
-  height: 8px;
-  background-color: #FFE17F;
-  z-index: -1;
-}
-
-.company-contact a:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  right: -17px;
-  display: inline-block;
-  width: 250px;
-  max-width: 210px;
-  height: 8px;
-  background-color: #FFE17F;
-  z-index: -1;
 }
 
 .transport-company li {
@@ -533,7 +476,7 @@ section {
   letter-spacing: 0;
 }
 
-.transport-company:before {
+.transport-company::before {
   content: '';
   position: absolute;
   height: 7px;
@@ -543,7 +486,7 @@ section {
   left: 0;
 }
 
-.company-contact:before {
+.company-contact::before {
   content: '';
   position: absolute;
   height: 7px;
@@ -632,6 +575,10 @@ section {
   font-size: 16px;
 }
 
+footer a {
+  color: #FFFFFF;
+}
+
 .footer-page {
   display: flex;
   position: relative;
@@ -644,7 +591,7 @@ section {
   background-color: #444444;
 }
 
-.footer-logo:before {
+.footer-logo::before {
   content: '';
   position: absolute;
   top: 250px;
@@ -677,7 +624,7 @@ section {
   text-align: right;
 }
 
-.footer-contact span {
+.footer-contact a {
   color: #FFFFFF;
   font-size: 16px;
 }
@@ -685,3 +632,25 @@ section {
 .footer-contact img {
   margin-top: 60px;
 }
+
+/*CATALOG*/
+
+/*header*/
+
+.navigation-container-catalog {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  width: 1160px;
+  height: 186px;
+  background-color: #FFE17F;
+}
+
+/*main*/
+
+.main-catalog {
+  height: 1550px;
+}
+
+
