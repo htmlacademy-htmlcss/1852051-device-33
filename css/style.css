@@ -54,7 +54,6 @@ h1, .big-size {
 .header {
   position: relative;
   height: 750px;
-  margin-top: 100px;
   padding-top: 40px;
 }
 
@@ -650,7 +649,6 @@ footer a {
 
 .header-catalog {
   height: 186px;
-  margin-top: 50px;
 }
 
 .navigation-container-catalog {
