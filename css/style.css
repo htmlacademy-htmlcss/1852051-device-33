@@ -303,11 +303,6 @@ section {
 }
 
 /*main*/
-
-.main-index {
-  height: 2060px;
-}
-
 .assortment-container {
   margin-bottom: 70px;
 }
@@ -546,6 +541,7 @@ section {
   background-color: #F0F0F0;
   bottom: 435px;
   z-index: -10;
+  margin-bottom: -435px;
 }
 
 /*footer*/
@@ -664,10 +660,6 @@ footer a {
 }
 
 /*main*/
-
-.main-catalog {
-  height: 1480px;
-}
 
 .catalog-content {
   width: 1080px;
