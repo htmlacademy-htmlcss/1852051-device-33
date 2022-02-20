@@ -506,9 +506,7 @@ section {
 }
 
 .mailing-form img {
-  position: absolute;
-  right: 150px;
-  top: 10px;
+  margin-right: 10px;
 }
 
 .email {
@@ -639,7 +637,7 @@ footer a {
   align-items: center;
 }
 
-.social-icons-circle a{
+.social-icons-circle a {
   height: 25px;
 }
 
