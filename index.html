@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
@@ -390,6 +390,54 @@
     </address>
   </div>
 </footer>
+<div class="modal-container">
+  <div class="modal modal-auth">
+    <section class="modal-content">
+      <h1 class="modal-title">Доставка под заказ</h1>
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26 2.364 23.636 0 13 10.636 2.364 0 0 2.364 10.636 13 0 23.636 2.364 26 13 15.364 23.636 26 26 23.636 15.364 13 26 2.364Z" fill="black"/>
+        </svg>
+      </button>
+      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="sign-in-delivery-form-modal">
+          <div class="field-group">
+            <label class="visually-hidden" for="auth-login">Ваше имя</label>
+            <span class="form-filed-label">Ваше имя:</span>
+            <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Введите имя" required>
+            <span class="add-text-input">Добавьте имя</span>
+          </div>
+          <div class="field-group">
+            <label class="visually-hidden" for="auth-password">Email</label>
+            <span class="form-filed-label">Ваш e-mail:</span>
+            <input class="auth-form-field auth-form-field-error field" type="password" id="auth-password" name="auth-password" placeholder="почта" required>
+            <span class="add-text-input text-input-error">Забавный у вас адрес</span>
+          </div>
+        </div>
+        <div class="delivery-product-modal">
+          <div class="field-group">
+            <label class="visually-hidden" for="auth-login">Наименование товара</label>
+            <span class="form-filed-label">Что нужно привезти:</span>
+            <input type="text" placeholder="В свободной форме" class="auth-form-field name-product"/>
+          </div>
+          <div class="number">
+            <label class="visually-hidden" for="auth-login">Количество товара</label>
+            <span class="form-filed-label">Количество:</span>
+            <div class="attention-modal">
+            </div>
+            <div class="number-product-buttons">
+              <input type="button" class="plus-button auth-form-field">
+              <input type="number" class="auth-form-field number-product-modal" value="1">
+              <input type="button" class="minus-button auth-form-field">
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Отправить" class="submit-modal-button background-yellow-line">
+      </form>
+    </section>
+  </div>
+</div>
 </body>
 </html>
 
