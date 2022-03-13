@@ -58,8 +58,8 @@ a, input[type=button] {
   content: '';
   position: absolute;
   bottom: 37%;
-  left: -10%;
-  width: 120%;
+  left: 0;
+  width: 100%;
   height: 8px;
   background-color: #FFE17F;
   z-index: -1;
@@ -398,6 +398,8 @@ section {
   width: 50px;
   border-radius: 50%;
   border: 2px solid #000000;
+  position: absolute;
+  margin-left: 213px;
 }
 
 .dropdown-list span {
@@ -694,11 +696,15 @@ section {
 
 .delivery-items {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 280px;
   height: 40px;
   text-align: center;
+}
+
+.conditions:hover {
+  box-shadow: inset -7px 0 0 #000000;
 }
 
 .delivery-items span {
@@ -1150,13 +1156,15 @@ footer a {
 }
 
 .modal-container {
+  /*display: none;*/
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
 }
 
 .modal {
@@ -1192,6 +1200,20 @@ footer a {
 
 .field {
   width: 360px;
+}
+
+.name-img {
+  background-image: url("../images/icons/name-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 336px;
+}
+
+.email-img {
+  background-image: url("../images/icons/e-mail-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 336px;
 }
 
 .auth-form-field-error {
@@ -1287,17 +1309,6 @@ footer a {
   color: black;
   border: none;
   background-color: #ffffff;
-}
-
-.background-yellow-line::before {
-  content: '';
-  position: absolute;
-  bottom: 37%;
-  left: -10%;
-  width: 120%;
-  height: 8px;
-  background-color: #FFE17F;
-  z-index: -1;
 }
 
 /*CATALOG*/
