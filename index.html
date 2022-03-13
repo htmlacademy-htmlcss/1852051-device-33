@@ -31,6 +31,7 @@
             <path d="M.5 12.389h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5s-3.5 1.6-3.5 3.5c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" fill="#000"/>
           </svg>
           <span>Войти</span>
+          <span class="visually-hidden">Войти</span>
         </a>
       </div>
       <div class="compare nav-item">
@@ -39,6 +40,7 @@
             <path d="M6 .389H4v12h2v-12ZM2 4.389H0v8h2v-8ZM10 3.389H8v9h2v-9Z" fill="#000"/>
           </svg>
           <span>Сравнить</span>
+          <span class="visually-hidden">Сравнить</span>
         </a>
       </div>
       <div class="basket-form nav-item">
@@ -50,15 +52,49 @@
               fill="#000"/>
           </svg>
           <span>Корзина</span>
+          <span class="visually-hidden">Корзина</span>
         </a>
+        <div class="popover popover-cart">
+          <div class="popover-content">
+            <ul class="cart-items-list-popover">
+              <li class="cart-item">
+                <img src="images/content/self1-popover.png" width="39" height="44">
+                <span class="cart-item-product">Любительская <br>селфи-палка</span>
+                <button type="button" class="delete-item-button button">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z" fill="white"/>
+                  </svg>
+                  <span class="visually-hidden">Удалить товар из корзины</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <img src="images/content/self2-popover.png" height="44" width="39">
+                <span class="cart-item-product">Профессиональная <br>селфи-палка</span>
+                <button class="delete-item-button button" type="button">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z" fill="white"/>
+                  </svg>
+                  <span class="visually-hidden">Удалить товар из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="purchase-price">
+              <span>Товаров: 2</span>
+              <span>Сумма: 2000 ₽</span>
+            </div>
+            <input type="button" value="Открыть корзину" class="open-basket">
+            <span class="visually-hidden">Открыть корзину</span>
+          </div>
+        </div>
       </div>
     </div>
     <nav>
       <div class="dropdown-list">
         <span id="dropdown">Каталог товаров</span>
-        <div class="dropdown-img">
-          <!--          TODO fix image-->
-          <img src="images/icons/plus.png" alt="logo"/>
+        <div class="dropdown-wrap-images">
+          <svg class="dropdown-img" width="16" height="17" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 7.389H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="black"/>
+          </svg>
         </div>
       </div>
       <ul class="header-navigation-list">
