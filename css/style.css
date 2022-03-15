@@ -52,6 +52,8 @@ a, input[type=button] {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: black;
+  text-align: center;
+  width: 100%;
 }
 
 .background-yellow-line::before {
@@ -835,10 +837,6 @@ section {
   margin-bottom: 48px;
 }
 
-.company-contact a {
-  margin-left: 15px;
-}
-
 address {
   font-style: inherit;
   margin-bottom: 30px;
@@ -853,6 +851,10 @@ address a {
   padding: 0;
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+.feedback {
+  width: 230px;
 }
 
 .transport-company {
@@ -883,6 +885,10 @@ transport-company li:not(:last-child) {
   background-color: black;
   top: 0;
   left: 0;
+}
+
+.about {
+  width: 250px;
 }
 
 .company-contact::before {
@@ -1156,8 +1162,8 @@ footer a {
 }
 
 .modal-container {
-  /*display: none;*/
-  display: flex;
+  display: none;
+  /*display: flex;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -1276,13 +1282,13 @@ footer a {
 }
 
 .plus-button {
-  background-image: url("../images/icons/minus.svg");
+  background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .minus-button {
-  background-image: url("../images/icons/plus.svg");
+  background-image: url("../images/icons/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

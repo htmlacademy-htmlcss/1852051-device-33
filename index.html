@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
@@ -8,6 +8,7 @@
 </head>
 <body>
 <header class="header site-content">
+  <h1 class="visually-hidden">Интернет-магазин электронной техники Device</h1>
   <div class="navigation-container">
     <a class="logo-link-index-html" href="#">
       <svg class="logo" width="145" height="36" viewBox="0 0 145 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +59,8 @@
           <div class="popover-content">
             <ul class="cart-items-list-popover">
               <li class="cart-item">
-                <img src="images/content/self1-popover.png" width="39" height="44">
-                <span class="cart-item-product">Любительская <br>селфи-палка</span>
+                <img src="images/content/self1-popover.png" width="39" height="44" alt="Любительская селфи-палка">
+                <span class="cart-item-product">Любительская <br/>селфи-палка</span>
                 <button type="button" class="delete-item-button button">
                   <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z" fill="white"/>
@@ -68,8 +69,8 @@
                 </button>
               </li>
               <li class="cart-item">
-                <img src="images/content/self2-popover.png" height="44" width="39">
-                <span class="cart-item-product">Профессиональная <br>селфи-палка</span>
+                <img src="images/content/self2-popover.png" height="44" width="39" alt="Профессиональная селфи-палка">
+                <span class="cart-item-product">Профессиональная <br/>селфи-палка</span>
                 <button class="delete-item-button button" type="button">
                   <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m10 1.687-.91-.91L5 4.87.91.778 0 1.687l4.09 4.09L0 9.87l.91.909L5 6.687l4.09 4.09.91-.908-4.09-4.091L10 1.687Z" fill="white"/>
@@ -115,7 +116,7 @@
       </div>
       <div class="slider-content">
         <div class="slider-wrapper">
-          <img class="slider-gallery" src="images/content/slider-1.png" height="560" width="560"/>
+          <img class="slider-gallery" src="images/content/slider-1.png" height="560" width="560" alt="1 фото слайдера"/>
           <div class="slider-controls">
             <button class="slider-button slider-prev" type="button">
               <svg width="20" height="60" viewBox="0 0 20 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +203,7 @@
                 fill="#363636"/>
             </svg>
           </div>
-          <span class="item-name">Моноподы </br> для селфи</span>
+          <span class="item-name">Моноподы <br/> для селфи</span>
         </a>
       </li>
       <li class="assortment-list">
@@ -265,11 +266,11 @@
     </ul>
   </section>
   <section class="delivery">
-      <ul class="conditions">
-        <li class="delivery-items"><span class="background-yellow-line">Доставка</span></li>
-        <li class="delivery-items"><span class="background-yellow-line">Гарантия</span></li>
-        <li class="delivery-items"><span class="background-yellow-line">Кредит</span></li>
-      </ul>
+    <ul class="conditions">
+      <li class="delivery-items"><span class="background-yellow-line">Доставка</span></li>
+      <li class="delivery-items"><span class="background-yellow-line">Гарантия</span></li>
+      <li class="delivery-items"><span class="background-yellow-line">Кредит</span></li>
+    </ul>
     <div class="description condition-condition">
       <div class="description-container">
         <div class="description-text">
@@ -286,7 +287,7 @@
   </section>
   <div class="background">
   </div>
-  <button class="delivery-exclusive">
+  <a class="delivery-exclusive">
     <div class="delivery-logo">
       <svg aria-hidden="true" focusable="false" width="47" height="31" viewBox="0 0 47 31" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -300,8 +301,7 @@
       <div class="attention-logo">
       </div>
     </div>
-  </button>
-  </section>
+  </a>
   <section class="contact-info">
     <div class="company-info">
       <h1>О нас</h1>
@@ -315,21 +315,26 @@
         <li><span>СДИК</span></li>
         <li><span>ТоксБерри</span></li>
       </ul>
-      <a class="background-yellow-line" href="#">Подробнее о нас</a>
+      <div class="about">
+        <a class="background-yellow-line" href="#">Подробнее о нас</a>
+      </div>
     </div>
     <div class="company-contact">
       <h1>Контакты</h1>
       <p>Вы можете забрать товар сами, заехав в наш офис.
         Заодно сможете проверить работоспособность покупки. </p>
       <h3>Интернет-магазин «Девайс»</h3>
-      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+      <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br/>
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <ul class="working-time"><h3>Время работы</h3>
+      <h3>Время работы</h3>
+      <ul class="working-time">
         <li>пн—пт: с 10:00 до 22:00</li>
         <li>сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="background-yellow-line" href="#">Напишите нам</a>
+      <div class="feedback">
+        <a class="background-yellow-line" href="#">Напишите нам</a>
+      </div>
     </div>
   </section>
   <section class="mailing">
@@ -447,7 +452,8 @@
           <div class="field-group">
             <label class="visually-hidden" for="auth-password">Email</label>
             <span class="form-filed-label">Ваш e-mail:</span>
-            <input class="auth-form-field auth-form-field-error field email-img" type="email" id="auth-password" name="auth-password" placeholder="Ваш e-mail" value="почта" required>
+            <input class="auth-form-field auth-form-field-error field email-img" type="email" id="auth-password" name="auth-password" placeholder="Ваш e-mail" value="почта"
+                   required>
             <span class="add-text-input text-input-error">Забавный у вас адрес</span>
           </div>
         </div>
@@ -463,9 +469,9 @@
             <div class="attention-modal">
             </div>
             <div class="number-product-buttons">
-              <input type="button" class="plus-button auth-form-field">
+              <input type="button" class="minus-button auth-form-field" value=" ">
               <input type="number" class="auth-form-field number-product-modal" value="1">
-              <input type="button" class="minus-button auth-form-field">
+              <input type="button" class="plus-button auth-form-field" value=" ">
             </div>
           </div>
         </div>
